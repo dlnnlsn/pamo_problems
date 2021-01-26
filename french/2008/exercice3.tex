@@ -1,0 +1,27 @@
+\documentclass[varwidth]{standalone}
+
+\usepackage{enumerate}
+
+\begin{document}
+    Soient trois entiers positifs non nuls $a$, $b$ et $c$ tels que $a < b < c$. On consid\`ere les ensembles $A$, $B$, $C$ et $X$ d\'efinis de la fa\c con suivante:
+    $A = \{1, 2, \dots, a\}$, $B = \{a + 1, a + 2, \dots, b\}$, $C = \{b + 1, b + 2, \dots, c\}$ et $X = A \cup B \cup C = \{1, 2, \dots, c\}$.
+
+    D\'eterminer en fonction de $a$, $b$ et $c$ le nombre de fa\c cons de placer les \'el\'ements de $X$ dans trois bo\^ites de la mani\`ere suivante:
+    
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Bo\^ite $1$ & Bo\^ite $2$ & Bo\^ite $3$ \\
+            \hline
+            $x$ & $y$ & $z$ \\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    Sachant que:
+    \begin{enumerate}[a)]
+        \item $x \leq y \leq z$;
+        \item les \'el\'ements de $B$ ne doivent pas \^etre mis dans la bo\^ite $1$
+        \item les \'el\'ements de $C$ ne peuvent \^etre mis que dans la bo\^ite $3$.
+    \end{enumerate}
+\end{document}
