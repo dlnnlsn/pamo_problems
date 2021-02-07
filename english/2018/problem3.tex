@@ -1,0 +1,16 @@
+\documentclass[varwidth]{standalone}
+
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+    For any positive integer $x$, we set
+    \begin{align*}
+        g(x) & = \text{the largest odd divisor of } x, \\
+        f(x) & = \begin{cases}
+            \frac{x}{2} + \frac{x}{g(x)} & \text{if } x \text{ is even;} \\
+            2^{\frac{x + 1}{2}} & \text{if } x \text{ is odd.}
+        \end{cases}
+    \end{align*}
+
+    Consider the sequence $(x_n)_{n \in \mathbb{N}}$ defined by $x_1 = 1$, $x_{n + 1} = f(x_n)$. Show that the integer $2018$ appears in this sequence, determine the least integer $n$ such that $x_n = 2018$, and determine whether $n$ is unique or not.
+\end{document}
