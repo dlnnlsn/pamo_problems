@@ -1,0 +1,16 @@
+\documentclass[varwidth]{standalone}
+
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+    Pour tout entier naturel non nul $x$, on pose
+    \begin{align*}
+        g(x) & = \text{le plus grand diviseur impair de } x, \\
+        f(x) & = \begin{cases}
+            \frac{x}{2} + \frac{x}{g(x)}, & \text{si } x \text{ est pair;}\\
+            2^{\frac{x + 1}{2}}, & \text{si } x \text{ est impair}.
+        \end{cases}
+    \end{align*}
+
+    On consid\`ere la suite $(x_n)_{n \in \mathbb{N}}$ d\'efinie par $x_1 = 1$, $x_{n + 1} = f(x_n)$. Montrer que l'entier $2018$ apparait dans cette suite, d\'eterminer le plus petit entier naturel non nul $n$ tel que $x_n = 2018$, et d\'eterminer si $n$ est unique ou non.
+\end{document}
